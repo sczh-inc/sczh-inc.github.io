@@ -1,0 +1,157 @@
+@import url(https://lsong.org/css/stylesheet.css);
+@import url(https://lsong.org/stylesheets/grid.css);
+@import url(https://lsong.org/stylesheets/card.css);
+@import url(https://lsong.org/stylesheets/details.css);
+ 
+/* ===== 常见问题 ===== */
+
+.hero {
+  padding: 5rem 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.headline {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.founder {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.founder-avatar img {
+  /* border-radius: 50%; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.founder-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.founder-info h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.founder-info h3 a:hover {
+  color: #2563eb;
+}
+
+.founder-info p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.founder-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.founder-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.founder-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  padding: 2rem 0 1rem;
+}
+
+.footer-col h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.footer-col p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.footer-col a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #2563eb;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* ===== 卡片内链接 ===== */
+.card h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.card h3 a:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  .founder {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .founder-links {
+    justify-content: center;
+  }
+  .nav-bar {
+    gap: 0.75rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .contact-form {
+    max-width: 100%;
+  }
+}
