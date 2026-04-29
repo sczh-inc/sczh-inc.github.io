@@ -95,6 +95,79 @@ section li::before {
   line-height: 1.7;
 }
 
+.headline {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.founder {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.founder-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.founder-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.founder-info h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.founder-info h3 a:hover {
+  color: #2563eb;
+}
+
+.founder-info p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.founder-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.founder-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.founder-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-cta {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-cta a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-cta a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
@@ -104,5 +177,14 @@ section li::before {
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+  .founder {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .founder-links {
+    justify-content: center;
   }
 }
